@@ -1,0 +1,36 @@
+* {
+    margin: 0;
+    padding: 0;
+    border: 0;
+}
+
+body {
+    margin: 0px;
+    background-image: url(./assets/background/bg.svg);
+    animation: animatedBackground 10s linear infinite;
+}
+
+.container{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    height: 100vh;
+}
+
+.canvas {
+    width: 640px;
+    height: 360px;
+    border-radius: 20px;
+    overflow: hidden;
+    margin-top: 25vh;
+    margin: 0 auto;
+    -webkit-box-shadow: 7px 1px 66px 26px rgba(0,0,0,0.31);
+    -moz-box-shadow: 7px 1px 66px 26px rgba(0,0,0,0.31);
+    box-shadow: 7px 1px 66px 26px rgba(0,0,0,0.31);
+    
+}
+
+@keyframes animatedBackground {
+    from { background-position: 0 0; }
+    to { background-position: 56.5% 0; }
+}
